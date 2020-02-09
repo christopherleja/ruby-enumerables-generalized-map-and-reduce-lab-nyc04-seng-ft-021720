@@ -1,1 +1,24 @@
-# Your Code Here
+def map(array)
+  result_array = []
+  i = 0
+    while i < array.length
+      yield(array[i])
+      result_array.push(yield(array[i]))
+    i += 1
+    end
+  result_array
+end
+
+def reduce(array, starting_value = nil)
+  if starting_value
+    sv = starting_value
+    i = 0
+  else
+    
+  if i < array.length
+    yield(array[i])
+    result += yield(array[i])
+  i += 1
+end
+result
+end
