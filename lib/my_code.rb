@@ -17,9 +17,9 @@ def reduce(array, starting_value = nil)
     sum = array[0]
     i = 1
   end
-  if i < array.length
+    if i < array.length
     sum += yield(sum, array[i])
-  i += 1
-end
+    i += 1
+    end
 sum
 end
